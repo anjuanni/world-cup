@@ -1,10 +1,10 @@
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0 auto;
+    margin-top: 3em;
 }
 
 /* ------------------top part styles-------------------- */
-
 main,
 article {
     width: 80%;
@@ -92,6 +92,10 @@ p {
     margin-bottom: 1.5em;
 }
 
+.navigate-button:hover {
+    background-color: #fe004d;
+}
+
 .navigate-button a {
     text-decoration: none;
     color: black;
@@ -109,7 +113,8 @@ p {
     margin-left: 1em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1em;
+    grid-row-gap: 1.5em;
+    grid-column-gap: 1em;
 
 }
 
@@ -174,3 +179,41 @@ ul li a {
     padding-right: 1em;
     padding-bottom: 3em;
 }
+
+/*-------------footer styles ends here----------------- */
+/* --------------match.html styles----------- */
+.buttons-matches-part {
+    display: flex;
+    margin-bottom: 5em;
+}
+
+.matches {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 1em;
+    justify-items: center;
+    margin-left: 1em;
+}
+
+.match {
+    padding: 1em;
+    border-radius: 12px;
+    box-shadow: 2px 2px 2px gray;
+}
+
+.matches img {
+    width: 30%;
+}
+
+.match-team {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.match-schedule {
+    padding-left: 2em;
+}
+
+/*-------button animation---------------- */
