@@ -54,6 +54,7 @@ p {
     border: 1px solid transparent;
     padding: 8px 20px;
     border-radius: 10px;
+    width: 50%;
 }
 
 .anchor-button a {
@@ -90,6 +91,7 @@ p {
     border-radius: 7px;
     width: 12em;
     margin-bottom: 1.5em;
+    transition: background-color .4s;
 }
 
 .navigate-button:hover {
@@ -217,3 +219,16 @@ ul li a {
 }
 
 /*-------button animation---------------- */
+.anchor-button:hover {
+    animation: bigger-button .1s ease-in;
+}
+
+@keyframes bigger-button {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.04);
+    }
+}
