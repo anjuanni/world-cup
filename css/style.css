@@ -150,40 +150,6 @@ p {
 }
 
 /* ----------------blogs style ends here---------- */
-/* ----------------footer style starts here---------- */
-footer {
-    background-color: black;
-    width: 100%;
-    text-align: center;
-    color: white;
-    padding: 1em 0em;
-}
-
-
-ul {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 1em;
-}
-
-ul li {
-    list-style: none;
-
-}
-
-ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: .75em;
-}
-
-.social-icons i {
-    padding-right: 1em;
-    padding-bottom: 3em;
-}
-
-/*-------------footer styles ends here----------------- */
 /* --------------match.html styles----------- */
 .buttons-matches-part {
     display: flex;
@@ -217,6 +183,34 @@ ul li a {
 
 .match-schedule {
     padding-left: 2em;
+}
+
+/* --------------matches styles ends here---------- */
+/* ------------ view all button on tablet device--------- */
+/* .tablet-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.view-all-button {
+    width: 18%;
+    height: 18%;
+    padding: 1em 1em;
+    background-color: #f9004d;
+    border: 1px solid transparent;
+    border-radius: 9px;
+    margin-bottom: 5em;
+}
+
+.view-all-button a {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+}
+
+.tablet-button {
+    display: none;
 }
 
 /*-------button animation---------------- */
@@ -272,6 +266,11 @@ ul li a {
     .matches {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .tablet-button {
+        display: none;
+
+    }
 }
 
 /* ----------media Query for medium devices----------- */
@@ -293,11 +292,57 @@ ul li a {
         margin-bottom: 2em;
     }
 
-    .blogs {
+    .blogs,
+    .matches {
         grid-template-columns: repeat(2, 1fr);
+        width: 90%;
     }
 
     #display-none {
         display: none;
     }
+
+    .tablet-button {
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
 }
+
+/* ----------------footer style starts here---------- */
+footer {
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 1em 0em;
+}
+
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1em;
+}
+
+ul li {
+    list-style: none;
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: .75em;
+}
+
+.social-icons i {
+    padding-right: 1em;
+    padding-bottom: 3em;
+}
+
+/*-------------footer styles ends here----------------- */
