@@ -50,7 +50,7 @@ p {
 }
 
 .anchor-button {
-    background-color: #fe004d;
+    background-color: #f9004d;
     border: 1px solid transparent;
     padding: 8px 20px;
     border-radius: 10px;
@@ -60,13 +60,14 @@ p {
 .anchor-button a {
     text-decoration: none;
     color: white;
-    font-size: bold;
+    font-size: 1em;
 }
 
 .fa-angle-right {
     color: white;
     font-size: 1em;
-    margin-left: 1em;
+    padding-left: .3em;
+
 }
 
 /* -----------top part style finish here----------- */
@@ -80,7 +81,7 @@ p {
     width: 25%;
     padding-top: 1.5em;
     border: 1px solid black;
-    border-radius: 7px;
+    border-radius: 10px;
     height: 50%;
 }
 
@@ -88,14 +89,14 @@ p {
     padding: 10px 0px;
     background-color: white;
     border: 1px solid transparent;
-    border-radius: 7px;
+    border-radius: 10px;
     width: 12em;
     margin-bottom: 1.5em;
-    transition: background-color .4s;
+    transition: .4s;
 }
 
 .navigate-button:hover {
-    background-color: #fe004d;
+    background-color: #f9004d;
 }
 
 .navigate-button a {
@@ -230,5 +231,73 @@ ul li a {
 
     to {
         transform: scale(1.04);
+    }
+}
+
+/* ----------media Query for small devices----------- */
+@media screen and (max-width:768px) {
+    body {
+        width: 100%;
+    }
+
+    .top-part {
+        flex-direction: column;
+    }
+
+    .top-description,
+    .top-part-image {
+        width: 100%;
+    }
+
+    .top-part-image img {
+        margin-top: 1em;
+    }
+
+    p {
+        width: 80%;
+    }
+
+    .button-blogs-part,
+    .buttons-matches-part {
+        flex-direction: column;
+    }
+
+    .buttons {
+        width: 80%;
+        margin-left: 1em;
+        margin-bottom: 3em;
+    }
+
+    .blogs,
+    .matches {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* ----------media Query for medium devices----------- */
+@media screen and (min-width:768px) and (max-width:992px) {
+    .top-description {
+        padding-bottom: 1em;
+    }
+
+    .button-blogs-part,
+    .buttons-matches-part {
+        flex-direction: column;
+    }
+
+    .buttons {
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        border: 1px solid gray;
+        margin-bottom: 2em;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #display-none {
+        display: none;
     }
 }
